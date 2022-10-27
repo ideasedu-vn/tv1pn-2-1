@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Simple Recorder.js demo with record, stop and pause - addpipe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <div id="controls">
+      <!-- <button id="pauseButton" disabled="">Pause</button> -->
+      <button id="listenButton" style="margin-left:40px; margin-right:20px; visibility: hidden;"></button>
+      <button id="recordButton" style="margin-left:120px; margin-right:20px;"></button>
+      <button onclick="showNextBtn()" id="stopButton" style="margin-left:60px; margin-right:40px; visibility: hidden; "></button>  
+
+    </div>
+
+    <div id="recording" style="margin-left:50px;visibility: hidden; display: flex; justify-content: center;">Đang ghi âm...</div>
+    
+    <ol id="recordingsList" style="margin-right: 500px; margin: auto;"></ol> 
+    
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+    <script src="recorder.js"></script>
+    <script src="app.js"></script>
+
+
+  
+</body></html>
